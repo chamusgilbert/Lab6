@@ -36,9 +36,11 @@ namespace Lab6
 
             char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
-            foreach (char vowel in vowels)
+            for (int i = 0; i < 5; i++)
             {
-                if (pigWord == vowel)
+
+
+                if (pigWord == vowels[i])
                 {
                     return true;
                 }
@@ -60,24 +62,22 @@ namespace Lab6
 
             for (int l = 0; l < pigWord.Length; l++)
             {
-                foreach (var vo in vowels)
-                {
 
-                    if (letters[l] == vo)
-                    {
-                        string substring = pigWord.Substring(l);
-                        string substring2 = pigWord.Substring(0, l);
-                        Console.WriteLine(substring + substring2 + "ay");
-                        break;
-                    }
+
+                if (letters[l] == vowels[0] || letters[l] == vowels[1] || letters[l] == vowels[2] || letters[l] == vowels[3] || letters[l] == vowels[4])
+                {
+                    string substring = pigWord.Substring(l);
+                    string substring2 = pigWord.Substring(0, l);
+                    Console.WriteLine(substring + substring2 + "ay");
                     break;
                 }
 
-
             }
+
 
         }
 
     }
 
 }
+
