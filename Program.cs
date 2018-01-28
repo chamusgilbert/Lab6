@@ -16,7 +16,7 @@ namespace Lab6
 
             Console.WriteLine("Submit a word that you need translated:");
             string input = Console.ReadLine();
-            //string[] pigWords = input.Split();
+
 
             char[] pigWords = input.ToCharArray();
             if (IsVowel(pigWords[0]) == true)
@@ -81,10 +81,3 @@ namespace Lab6
     }
 
 }
-
-
-
-
-
-
-
